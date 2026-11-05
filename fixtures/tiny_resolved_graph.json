@@ -1,0 +1,18 @@
+{
+  "_comment": "Hand-written synthetic fixture in the shape of shipreadyv2_resolved_graph.json (UnvibeCode 0.3.15). Not real tool output.",
+  "generated_at": "2026-11-01T00:00:00",
+  "edges": [
+    {"source": "src/pkg/api.py", "target": "src/pkg/core.py", "type": "imports", "confidence": "high", "resolution_strategy": "existing_file_resolution", "raw": "pkg.core"},
+    {"source": "src/pkg/cli.py", "target": "src/pkg/core.py", "type": "imports", "confidence": "medium", "resolution_strategy": "stem_fallback", "raw": "core"},
+    {"source": "tests/test_api.py", "target": "src/pkg/api.py", "type": "imports", "confidence": "high", "resolution_strategy": "existing_file_resolution", "raw": "pkg.api"},
+    {"source": "tests/test_cli.py", "target": "tests/fixtures/pkg.py", "type": "imports", "confidence": "medium", "resolution_strategy": "stem_fallback", "raw": "pkg"}
+  ],
+  "symbol_edges": [
+    {"source": "tests/test_cli.py", "target": "tests/fixtures/pkg.py", "type": "imports_module", "confidence": "medium", "resolution_strategy": "existing_file_resolution", "raw": "pkg"}
+  ],
+  "unresolved_imports": [
+    {"source": "src/pkg/api.py", "raw": "requests"},
+    {"source": "src/pkg/api.py", "raw": "json"},
+    {"source": "tests/test_api.py", "raw": "pkg"}
+  ]
+}
